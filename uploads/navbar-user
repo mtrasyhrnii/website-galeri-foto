@@ -1,0 +1,195 @@
+<style>
+        /* Global Styles */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffff;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #C0C78C;
+            padding: 15px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+        }
+
+        .navbar .title {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #A6B37D;
+        }
+
+        .navbar .profile-icon {
+            font-size: 36px;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .navbar .dropdown-menu {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 1000;
+            min-width: 160px;
+        }
+
+        .navbar .dropdown-menu a {
+            display: block;
+            padding: 12px 16px;
+            color: #333;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .navbar .dropdown-menu a:hover {
+            background-color: #f2f6d2;
+            color: #ffffff;
+        }
+
+        .hero {
+            height: 400px; /* Tinggi lebih tinggi untuk tampilan yang lebih dramatis */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px; /* Membatasi lebar konten */
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 35px; /* Ukuran font lebih besar */
+            font-weight: bold;
+            margin-top: 45px;
+            margin-bottom: 10px; /* Jarak bawah yang lebih besar */
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px; /* Jarak bawah yang lebih besar */
+        }
+
+        /* Albums Section */
+        .section {
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .section h3 {
+            font-size: 28px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Albums List */
+        .album-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .album-list li {
+            flex: 1 1 18%;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .album-list li a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .album-list li p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer { 
+            text-align: center; 
+            padding: 10px; 
+            background-color: #fff; 
+            color: #333; 
+            margin-top: 25px; 
+            width: 100%; 
+            bottom: 0; 
+            left: 0; 
+        } 
+
+        footer p { 
+            font-size: 15px;  
+            margin: 0; 
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .section .col-5, .container .col-4 {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .photo-item {
+            flex: 1 0 21%; /* 4 items per row */
+            margin: 5px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-item img {
+            width: 100%; /* Width 100% untuk mengisi container */
+            height: auto; /* Otomatis menyesuaikan tinggi */
+            max-height: 200px; /* Maksimum tinggi 200px */
+            object-fit: cover; /* Memastikan gambar tetap proporsional */
+        }
+    </style>
